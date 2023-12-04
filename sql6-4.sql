@@ -7,7 +7,7 @@
 -- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 use nycFlights;
-SELECT 
+SELECT Max
     ROUND(MAX(dep_delay) / 60, 2) AS 'Maximum Delay (in hours)'
 FROM
     Flights;
